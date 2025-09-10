@@ -1,0 +1,7 @@
+*{
+    font-family: calibri,sans-serif;
+}
+img{
+    float:left;
+    shape-outside: margin-box;
+}

@@ -1,0 +1,98 @@
+body{
+    width: 850px;
+    padding: 0 50% 0 50% ;
+}
+    
+a{
+    letter-spacing: 2px;
+    padding: 2px;
+    width: 250px;
+    border:1px solid rgb(237, 231, 231);
+    margin: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+img{
+    padding:20px;
+}
+
+
+.ig{
+    background-color: royalblue;
+    display: flex;
+    align-items: center; 
+
+}
+
+.yo{
+    margin: 0 0 0 60px;
+}
+.container{
+    position: relative;
+    margin: 20px 0 0 4.3%;
+}
+.container img{
+    width: 750px;
+    height: auto; 
+    display: block;
+}
+.container h1{
+    position: absolute;
+    left: 15%;
+    bottom: 10%; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+} 
+
+article h1{
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+figure figcaption{
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration:double;
+    color:rgb(29, 34, 34);
+    font-size: larger;
+}
+
+figure img{
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(255, 16, 16, 0.1);
+    
+}
+.piou{
+    display:flex;
+    flex-wrap: wrap;
+}
+section{
+    width: 750px;
+    position: relative;
+}
+.background{
+    width: 750px;
+}
+.overlay{
+    width: 700px;
+    position: absolute;
+    top:50px;
+    right: 350px;
+    width: 350px;
+    border: 2px solid;
+    padding: 0;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(6, 229, 245);
+}
+#overlay{
+    position:absolute;
+    top:50px;
+    right: 0;
+    background-color: aqua;
+    font-size: x-large;
+    width: 450px;
+}

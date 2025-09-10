@@ -1,0 +1,138 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 9px; 
+
+}
+footer a{
+    text-decoration: none;
+}
+header span{
+    display:block;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(16, 16, 16);
+    padding: 30px 30px 40px 30px;
+    color: white;
+}
+nav{
+    background-color: rgb(2, 117, 165);
+}
+nav a{
+    color:white;
+    font-size:20px;
+    padding:10px;
+}
+nav li{
+    padding: 10px;
+}
+nav ul{
+    margin-top: 0;
+    list-style-type:none ;
+    display:flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+}
+nav a:hover{
+     border: 1px solid white;
+}
+main{
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px auto;
+    justify-content:space-between;
+}
+h1{
+    grid-row-start: 1;
+    grid-row-end:1 ;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+h2{
+    /* border-radius:15px 15px 0  0 ; */
+    background-color: rgb(2, 117, 165);
+    padding: 20px;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+
+}
+.card1{
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+    margin:10px;
+    width: 750px;
+    height:600px ;
+    grid-row-start: 2;
+    grid-row-end:2 ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-bottom: 30px;
+} 
+
+.card2{
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+    margin:10px;
+    width: 750px;
+    height:600px ;
+    grid-row-start: 2;
+    grid-row-end:2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-bottom: 30px;
+}
+.card2 li{
+    padding:10px;
+    position:relative; 
+    left: 40%;
+    top:200px;
+}
+
+footer{
+    text-align: center;
+    letter-spacing: 5px;
+    border-top: 1px solid black;
+}
+.special{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.float1 img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+    padding: 0 20px 20px 100px;
+}
+
+.float2 img{
+    float: right;
+    padding: 0 200px 20px 20px;
+}
+p{
+    padding: 15px;
+}
+
+.para{
+    display:grid;
+    grid-template-columns: auto 2fr auto;
+    padding-left: 30px;
+    width: 500px;
+}
+.para p{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-bottom: 2px solid black;
+    letter-spacing: 5px;
+    
+} 
