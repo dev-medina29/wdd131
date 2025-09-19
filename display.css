@@ -1,0 +1,18 @@
+
+div{
+    font-size: 2rem;
+    padding:1rem;
+    background-color:rgb(6, 27, 214);
+}
+span{
+    color: red;
+    padding:1rem;
+    background-color:yellow;
+  
+}  
+p,h1,h2{
+    font-size:2rem;
+    padding:2rem;
+    background-color:rgb(6, 214, 27);
+    display:inline;
+}
