@@ -3,14 +3,19 @@
         display:none;
     }
     nav ul{
-     display:grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-     font-size: 25px;
+     display:flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+
+     /* flex-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-columns: repeat(auto-fit, minmax(100px,1fr)); */
+    
     }
    nav li{
-    display: block;
+    display: flex;
     text-align: center;
+    font-size: 25px;
+    padding: 0 10px;
    }
 
 }
