@@ -82,7 +82,7 @@ footer{
     #weather h2,img{
         display:none;
     }
-    #weather:after{
+    #weather:before{
         content: "Weather ⛅";
         font-weight: bold;
         font-size: 20px;    
