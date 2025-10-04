@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Country Page">
+  <title>Country Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>  
+    <h1>THE REPUBLIC OF CONGO</h1>
+  </header>
+  <main>  
+    <div id="picture">
+      <picture>
+        <source srcset="images/WDD1.webp" media="(min-width: 1000px)">
+        <source srcset="images/WDD2.webp" media="(min-width: 300px)">
+        <img src="images/brazzaville.webp" alt="CONGO" width="400" height="200">
+      </picture>
+      <section id="data">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> Approx. 342,000 km²</li>
+          <li><strong>Population:</strong> Around 5.8 million (2024 estimate)</li>
+          <li><strong>Capital:</strong> Brazzaville</li>
+          <li><strong>Languages:</strong> French (official); Lingala and Kituba widely spoken</li>
+          <li><strong>Currency:</strong> Central African CFA franc (XAF)</li>
+          <li><strong>Time Zone:</strong> West Africa Standard Time (UTC+1)</li>
+          <li><strong>Calling Code:</strong> +242</li>
+          <li><strong>Internet TLD:</strong> .cg</li>
+        </ul>
+       
+      </section>
+      <section id="weather">
+        <h2>Weather</h2>
+        <!-- <h2>Weather ⛅</h2> -->
+        <img src="images/cloud-solid-full.svg" alt="Partly Cloudy" width="50" height="50">
+        <ul>
+          <li><strong>Temperature:</strong> 28°C (≈82°F)</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind Speed:</strong> 14 km/h (≈8.7 mph)</li>
+        </ul>
+     </section>
+    </div>
+    
+  </main>
+  <footer>   
+        <p>&copy; <span id="currentyear"></span> MBEDI Medina, Congo-Brazzaville. </p>
+        <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
