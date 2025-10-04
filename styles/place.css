@@ -1,7 +1,7 @@
 :root{
     --primary-color: #4CAF50;
     --secondary-color: #ff0000;
-    --font-family: Tahoma, sans-serif;}
+    --font-family: Roboto, sans-serif;}
 *{
     margin: 0;
     padding: 0;
@@ -82,7 +82,7 @@ footer{
     #weather h2,img{
         display:none;
     }
-    #weather:before{
+    #weather:after{
         content: "Weather ⛅";
         font-weight: bold;
         font-size: 20px;    
