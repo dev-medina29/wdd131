@@ -9,7 +9,7 @@ current_year= document.querySelector("#currentyear");
 current_year.innerHTML= `${year}`;
 current_date= document.querySelector("#lastModified");
 current_date.innerHTML= `Last modification ${month}/${day}/${year} at ${hours}:${minutes}:${seconds}`;
-current_date.style.color= "black";
+// current_date.style.color= "white";
 current_date.style.fontSize= "1em";
 // Static values matching the displayed weather
 const temperature = 9; // Celsius

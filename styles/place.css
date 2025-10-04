@@ -39,7 +39,7 @@ main{
 
 }
 h2{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 h1{
     color:#ffffff;
@@ -78,6 +78,9 @@ footer{
     border-radius: 8px;
 
 }
+strong{
+    color:black;
+}
 @media only screen and (max-width:700px){
     #weather h2,img{
         display:none;
@@ -86,7 +89,7 @@ footer{
         content: "Weather ⛅";
         font-weight: bold;
         font-size: 20px;    
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
     }
     picture img{
         display: block;
