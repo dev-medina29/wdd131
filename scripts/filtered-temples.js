@@ -78,13 +78,27 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   {
-    templeName: "Brazzaville Congo",
-    location: "Brazzaville, Congo",
-    dedicated: "2015, April, 26",
-    area: 10000,
+    templeName: "Abidjan Ivory Coast Temple",
+    location: "Abidjan, Ivory Coast",
+    dedicated: "2025,May,25",
+    area: 17360,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/brazzaville-congo/400x250/brazzaville-congo-temple-lds-273998-wallpaper.jpg"
-  }
-
-  
+    "https://www.churchofjesuschrist.org/imgs/bal80d1i45vz2eluh67xvxs09ep6p2m1lfv69t0q/full/1280%2C/0/default"
+  },
+  {
+    templeName: "Aba Nigeria Temple",
+    location: "Aba, Nigeria",
+    dedicated: "2005, August, 7",
+    area: 10500,
+    imageUrl:
+    "https://www.churchofjesuschrist.org/imgs/7210c09be95c4474772ae52e5f31c23c08112784/full/1280%2C/0/default"
+  },
+  {
+    templeName: "Accra Ghana Temple",
+    location: "Accra, Ghana",
+    dedicated: "2004, January, 11",
+    area: 10700,
+    imageUrl:
+    "https://www.churchofjesuschrist.org/imgs/7cf8e8b9e5a5a1f379d4e2c9bc2166f9c6007aca/full/640%2C/0/default"
+  },
 ];
