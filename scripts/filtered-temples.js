@@ -9,7 +9,7 @@ const current_year= document.querySelector('#current_year');
 current_year.textContent= `Last modification ${month}/${day}/${year} at ${hours}:${minutes}:${seconds}`;
 current_year.style.fontSize= '0.75em';
 current_year.style.textAlign= 'center';
-current_year.style.color= 'black';
+current_year.style.color= 'white';
 
 // hamberbuger 
 let menu = document.querySelector('#menu');
@@ -78,7 +78,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   {
-    templeName: "Abidjan Ivory Coast Temple",
+    templeName: "Abidjan Ivory Coast",
     location: "Abidjan, Ivory Coast",
     dedicated: "2025,May,25",
     area: 17360,
@@ -86,15 +86,15 @@ const temples = [
     "https://www.churchofjesuschrist.org/imgs/bal80d1i45vz2eluh67xvxs09ep6p2m1lfv69t0q/full/1280%2C/0/default"
   },
   {
-    templeName: "Aba Nigeria Temple",
-    location: "Aba, Nigeria",
-    dedicated: "2005, August, 7",
-    area: 10500,
+    templeName: "Baton Rouge Louisiana",
+    location: "Baton Rouge, Louisiana, United States",
+    dedicated: "2000, July, 16 ",
+    area: 13062,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/7210c09be95c4474772ae52e5f31c23c08112784/full/1280%2C/0/default"
+    "https://www.churchofjesuschrist.org/imgs/a75beca22300a3263bd47fba03b5b0d1b5ca0753/full/640%2C/0/default"
   },
   {
-    templeName: "Accra Ghana Temple",
+    templeName: "Accra Ghana",
     location: "Accra, Ghana",
     dedicated: "2004, January, 11",
     area: 10700,
@@ -102,3 +102,81 @@ const temples = [
     "https://www.churchofjesuschrist.org/imgs/7cf8e8b9e5a5a1f379d4e2c9bc2166f9c6007aca/full/640%2C/0/default"
   },
 ];
+
+function CardCreator(lists){
+  lists.forEach(list=>{
+    let card=document.createElement("section");
+    let name=document.createElement("h3");
+    let location=document.createElement("p");
+    let image=document.createElement("img");
+    let area= document.createElement("p");
+    let dedication =document.createElement("p");
+    name.textContent=`${list["templeName"]} Temple`;
+    location.textContent=`Location : ${list.location}`;
+    dedication.textContent=`Dedicated: ${list.dedicated}`;
+    area.innerHTML=`<span class="label">Size :</span>${list.area} sq ft`;
+    image.setAttribute("src",list.imageUrl);
+    image.setAttribute("alt",`${list.name} Temple`);
+    image.setAttribute("loading", "lazy");
+    
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(image);
+    let me=document.querySelector('.yes');
+    me.appendChild(card);
+  }
+  )
+};
+let small=document.querySelector('.small');
+let old=document.querySelector('.old');
+let large=document.querySelector('.large');
+let ew=document.querySelector('.New');
+let Home=document.querySelector('.home');
+
+CardCreator(temples);
+
+small.addEventListener('click',()=>{
+  let me=document.querySelector('.yes')
+  me.innerHTML='';
+  const toDisplay=temples.filter((temple)=>temple.area<10000);
+  CardCreator(toDisplay);
+  //menu.classList.toggle('open');
+});
+large.addEventListener('click',()=>{
+
+  let me=document.querySelector('.yes')
+
+  me.innerHTML='';
+
+  const toDisplay=temples.filter((temple)=>temple.area>90000);
+
+  CardCreator(toDisplay);
+  //menu.classList.toggle('open');
+
+});
+Home.addEventListener('click',()=>{
+
+  CardCreator(temples);
+  //menu.classList.toggle('open');
+
+});
+
+
+old.addEventListener('click',()=>{
+  let me=document.querySelector('.yes')
+  me.innerHTML='';
+  const toDisplay=temples.filter((temple)=>parseInt(temple.dedicated)<1900);
+  CardCreator(toDisplay);
+  //menu.classList.toggle('open');
+});
+
+ew.addEventListener('click',()=>{
+  let me=document.querySelector('.yes')
+  me.innerHTML='';
+  const toDisplay=temples.filter((temple)=>parseInt(temple.dedicated)>2000);
+  CardCreator(toDisplay);
+  //menu.classList.toggle('open');
+});
+
