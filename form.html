@@ -19,17 +19,21 @@
                 <label for="product">Product Name</label><br>
                 <select id="product" name="product" required>
                     <option value="" disabled selected>Select a Product...</option>
+                    <!-- <option value="medina">Mameh je suis la</option>
+                    <option value="me">Ola je suis la</option>
+                    <option value="medi">Moi moi et moi</option> -->
+                    
                 </select>
                 <br><br>
                 <div class="stars">
-                    <label for="rating">Overall Rating</label><br>
+                    <!-- <label for="rating">Overall Rating</label><br> -->
+                    <span>Overall Rating</span><br>
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                     <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
                     <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
                     <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
                     <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 </div>
-                <br><br>
                 <label for="date">Date of installation</label><br>
                 <input type="date" id="date" name="date" required>
                 <br><br>
@@ -49,8 +53,10 @@
                 <label for="write-review">Write your review</label><br>
                 <textarea id="write-review" name="write-review" rows="4" cols="50" placeholder="Write your review here..." required></textarea>
                 <br><br>
-                <label for="user-name">Your name</label><br>
-                <input type="text" id="user-name" name="user-name" placeholder="Enter your name" required><br>
+                <label for="user-name">Your name</label>
+                <br><br>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your name" required>
+                <br><br>
                 <input type="submit" value="Post Review">
                 <!-- <button type="submit">Submit Review</button> -->
             </fieldset>
