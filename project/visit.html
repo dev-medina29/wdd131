@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan Your Visit | Zoolondia Parc</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <header>
+    <h1>Zoolondia National Zoologic Parc</h1>
+    <p>Plan Your Visit / Buy a Ticket</p>
+    <nav id="navigation">
+    <ul>
+        <li><a href="homepage2.html" class="home">Home</a></li>
+        <li><a href="species.html" class="species">Present species</a></li>
+        <li><a href="visit.html" class="visit">Plan your visit / buy a ticket</a></li>
+        <li><a href="contact2.html" class="contact">Contact us</a></li>
+    </ul>   
+</nav>
+  </header>
+
+  <main>
+    <section class="visit-info">
+      <h2>Visiting Hours</h2>
+      <p>Open daily from 9:00 AM to 6:00 PM</p>
+      <p>Location: Brazzaville, Republic of the Congo</p>
+    </section>
+
+    <section class="ticket-options">
+      <h2>Ticket Options</h2>
+      <ul>
+        <li>Adult: 5,000 XAF</li>
+        <li>Child (under 12): 3,000 XAF</li>
+        <li>Senior: 4,000 XAF</li>
+        <li>Group (5+ people): 20% discount</li>
+      </ul>
+    </section>
+
+    <section class="booking-form">
+      <h2>Book Your Tickets</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="date">Visit Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1" required />
+
+        <label for="type">Ticket Type:</label>
+        <select id="type" name="type">
+          <option value="adult">Adult</option>
+          <option value="child">Child</option>
+          <option value="senior">Senior</option>
+          <option value="group">Group</option>
+        </select>
+
+        <button type="submit">Buy Ticket</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Zoolondia parc, Congo-Brazzaville. </p>
+    <p id="lastModified"></p>
+    <a href="https://www.facebook.com/WWR">
+        <img src='images/facebook.png' alt='Facebook' width='30' height='30'>
+    </a>
+    <a href="https://www.instagram.com/WWR">
+        <img src='images/instagram.png' alt='Instagram' width='30' height='30'>
+    </a>
+    <a href="https://www.twitter.com/WWR">
+        <img src='images/twitter.svg' alt='Twitter' width='30' height='30'>
+    </a> 
+  </footer>
+</body>
+</html>

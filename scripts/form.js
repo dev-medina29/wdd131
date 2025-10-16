@@ -63,13 +63,12 @@ function Mine(List){
 }
 
 Mine(products);
-
-document.addEventListener("DOMContentLoaded", () => {
-    let count = localStorage.getItem("reviewCount");
+let count = localStorage.getItem("reviewCount");
     if (!count) {
     count = 0;
     }
     count = parseInt(count) + 1;
+document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("reviewCount", count);
     const counterDisplay = document.getElementById("counter");
     if (counterDisplay) {

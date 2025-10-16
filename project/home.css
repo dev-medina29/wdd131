@@ -1,0 +1,101 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+}
+header, footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+nav {
+    background-color: #e0f2f1;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #2e8b57;
+    font-weight: bold;
+}
+.hero {
+    background-image: url('https://www.tripadvisor.com/Attraction_Review-g294189-d23358010-Reviews-Zoolandia_Le_Parc_Zoologique_Et_Botanique_De_Brazzaville-Brazzaville.html');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+.hero h1 {
+    font-size: 2.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+section {
+    margin-bottom: 2em;
+}
+.intro img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+/* here */
+*{
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+#navigation{
+    /* display:flex;
+    justify-content:space-around; */
+    align-items:center;
+    background-color:var(--last-color);
+}
+#navigation a{
+  text-decoration:none;
+  color:var(--secondary-color);
+  font-weight:700;
+  font-size:1.2rem;
+  padding:0.5rem;
+  display: inline;
+}
+#navigation a:hover{
+  color:var(--primary-color);
+}
+#navigation li{
+  list-style:none;
+}
+#navigation ul{
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  padding:1rem;
+  margin:0;
+}
+footer ul{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  padding:0;
+  margin:0;
+}
+footer ul li{
+  list-style:none;
+}
