@@ -6,9 +6,15 @@ const year= date.getFullYear();
 const month= date.getMonth()+1;
 const day= date.getDate();
 current_year= document.querySelector("#currentyear");
-current_year.innerHTML= `${year}`;
+if (current_year){
+    current_year.innerHTML= `${year}`;
+}
+
 current_date= document.querySelector("#lastModified");
-current_date.innerHTML= `Last modification ${month}/${day}/${year} at ${hours}:${minutes}:${seconds}`;
+if (current_date){
+    current_date.innerHTML= `Last modification ${month}/${day}/${year} at ${hours}:${minutes}:${seconds}`;
+}
+
 
 // Here we go
 const products = [
@@ -42,7 +48,6 @@ const products = [
 function Mine(List){
     // const Id=document.createElement("id");
     // const Name=document.createElement("name");
-    let i=2;
     List.forEach(list=>{
         
         let option=document.createElement("option")
@@ -51,9 +56,28 @@ function Mine(List){
         option.innerHTML=`${list.name}`;
         // option.innerHTML=`${i} medina`;
         let med=document.querySelector("#product");
-        med.appendChild(option);
-        i++;
+        if (med){
+            med.appendChild(option);
+        }
     })
 }
 
 Mine(products);
+
+document.addEventListener("DOMContentLoaded", () => {
+    let count = localStorage.getItem("reviewCount");
+    if (!count) {
+    count = 0;
+    }
+    count = parseInt(count) + 1;
+    localStorage.setItem("reviewCount", count);
+    const counterDisplay = document.getElementById("counter");
+    if (counterDisplay) {
+      counterDisplay.textContent = `You have submitted ${count} review(s).`; 
+    }
+});
+
+
+
+
+
