@@ -1,31 +1,72 @@
-*{
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-h1{
-    background-color: rgb(69, 147, 255);
-    text-align: center;
-    height: 45px;
-    font-size: 20px;
-    justify-content: center;
+*{
+    font-size: small;
+    font-family: "Goudy Bookletter 1911", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-body{
-    position:relative;
+h1{
+    background-color: rgb(255, 237, 40);
+    text-align: center;
 }
 form{
     position:relative;
-    background-color: rgb(152, 193, 237);
-    width: 50%;
-    left: 25%;
-    top:10px;
-    bottom:10px;
+    background-color: rgb(244, 222, 157);
+    /* width: 55px; */
+    /* left: 25%; */
+    /* top:10px;
+    bottom:10px; */
 }
-/* form label{
-    font-size:25px;
-} */
 footer{
-    background-color: rgb(69, 147, 255);
-    text-align: center;
+        background-color: rgb(255, 237, 40);
+        text-align: center;
 }
+
+
+
+
+@media only screen and (min-width:45em){
+   *{
+        font-family: "Goudy Bookletter 1911", serif;
+        font-weight: 400;
+        font-style: normal;
+   }
+
+    h1{
+        background-color: rgb(69, 147, 255);
+        text-align: center;
+        height: 45px;
+        font-size: 20px;
+        justify-content: center;
+    }
+    body{
+        position:relative;
+    }
+    form{
+        position:relative;
+        background-color: rgb(152, 193, 237);
+        width: 50%;
+        left: 25%;
+        top:10px;
+        bottom:10px;
+    }
+    /* form label{
+        font-size:25px;
+    } */
+    footer{
+        background-color: rgb(69, 147, 255);
+        text-align: center;
+    }
+}
+    
+   
+
+
+
+
+
+
+
+
+
+
