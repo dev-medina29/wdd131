@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script> 
+
+</head>
+<body>
+    <header> Product Review</header>
+    <main> 
+        <form action="review.html" method="get">
+            <fieldset>
+                <label for="product">Product Name</label><br>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+                <br><br>
+                <div class="stars">
+                    <label for="rating">Overall Rating</label><br>
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+                <br><br>
+                <label for="date">Date of installation</label><br>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+                <label for="features">
+                    <span>Which features did you find useful in the product?</span><br>
+                    <span>(Check all that apply)</span><br>
+                </label><br>
+                <input type="checkbox" id="durability" name="durability" value="durability">
+                <label for="durability">Durability</label><br>
+                <input type="checkbox" id="easy" name="easy" value="easy">
+                <label for="easy">Ease of Use</label><br>
+                <input type="checkbox" id="performance" name="performance" value="performance">
+                <label for="performance">Performance</label><br>
+                <input type="checkbox" id="design" name="design" value="design">
+                <label for="design">Design</label>
+                <br><br>
+                <label for="write-review">Write your review</label><br>
+                <textarea id="write-review" name="write-review" rows="4" cols="50" placeholder="Write your review here..." required></textarea>
+                <br><br>
+                <label for="user-name">Your name</label><br>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your name" required><br>
+                <input type="submit" value="Post Review">
+                <!-- <button type="submit">Submit Review</button> -->
+            </fieldset>
+        </form>
+    </main>
+    <footer>   
+        <p>&copy; <span id="currentyear"></span> MBEDI Medina, Congo-Brazzaville. </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
