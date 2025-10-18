@@ -43,13 +43,16 @@ main{
   justify-content: space-between;
 }
 .scenario{
-  width: 400px;
+  width: 300px;
 }
 .site_purpose{
-  width: 400px;
+  width: 300px;
 }
 .color{
-  width:400px;
+  width:300px;
+}
+.typo{
+  width:300px;
 }
 p{
   margin:0;
