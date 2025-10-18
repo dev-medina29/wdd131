@@ -1,8 +1,7 @@
 :root{
-  --primary-color: rgb(35, 231, 35);
+  --primary-color: #2e8b57;;
   --secondary-color:black;
   --last-color: white;
-  
 }
 *{
   font-family: "Goudy Bookletter 1911", serif;
@@ -15,7 +14,8 @@ a{
 footer{
   text-align:center;
   color:var(--secondary-color);
-  background-color:var(--last-color);
+  /* background-color:var(--last-color); */
+  background-color: #ffffff;
   padding:1rem;
   margin-top:2rem;
 }
@@ -32,11 +32,31 @@ h1{
 }
 h2{
   text-align:center;
-  font-size:2rem;
   margin-top:1rem;
+  background-color: aquamarine;
+  margin:0;
+  padding: 0;
+}
+main{
+  display:flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.scenario{
+  width: 400px;
+}
+.site_purpose{
+  width: 400px;
+}
+.color{
+  width:400px;
 }
 p{
-  color:var(--secondary-color);
+  margin:0;
+  padding: 0;
+  background-color:var(--last-color);
+  font-size:15px;
+  text-align: center;
 }
 #navigation{
     /* display:flex;
@@ -84,7 +104,6 @@ footer ul li{
   top:10px;
   bottom:10px;
   border: black solid 1px ;
-  box-shadow: black solid 2px;
 }
 iframe{
   position:relative;
