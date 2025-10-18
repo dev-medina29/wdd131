@@ -3,11 +3,16 @@
   --secondary-color:black;
   --last-color: white;
 }
-*{
+.goudy-bookletter-1911-regular {
   font-family: "Goudy Bookletter 1911", serif;
   font-weight: 400;
   font-style: normal;
 }
+/* *{
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
 a{
   text-decoration: none;
 }
