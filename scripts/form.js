@@ -63,20 +63,40 @@ function Mine(List){
 }
 
 Mine(products);
-let count = localStorage.getItem("reviewCount");
-    if (!count) {
-    count = 0;
-    }
-    count = parseInt(count) + 1;
-document.addEventListener("DOMContentLoaded", () => {
-    localStorage.setItem("reviewCount", count);
-    const counterDisplay = document.getElementById("counter");
-    if (counterDisplay) {
-      counterDisplay.textContent = `You have submitted ${count} review(s).`; 
-    }
-});
 
 
+// let count = localStorage.getItem("reviewCount");
+// if (!count) {
+//   count = 0;
+// }
+// else{
+//   count = parseInt(count);
+// }
+
+// document.addEventListener("DOMContentLoaded",()=>{
+//   const button=document.querySelector("#button");
+//   if (button){
+//     button.addEventListener("click", () => {
+//       // event.preventDefault();
+//       count+=1;
+//       localStorage.setItem("reviewCount", count);
+//       // const counterDisplay = document.querySelector("#counter");
+//       // counterDisplay.textContent = `You have submitted ${count} review(s).`;
+//       // if (counterDisplay) {
+//       //   counterDisplay.textContent = `You have submitted ${count} review(s).`; 
+//       // }
+//       });
+//       // const counterDisplay = document.querySelector("#counter");
+//       const counterDisplay=document.createElement("p");
+//       counterDisplay.textContent = `You have submitted ${count} review(s).`; 
+//       const ok=document.querySelector("#yes")
+//       if (ok){
+//         ok.appendChild(counterDisplay);
+//       }
+//       console.log(counterDisplay);
+//   }
+  
+// })
 
 
 
